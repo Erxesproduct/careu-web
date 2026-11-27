@@ -1,0 +1,49 @@
+# Manual steps in erxes admin
+
+These actions happen inside the erxes dashboard and are intentionally not faked in code. No erxes 3.0 instance URL, app token, or client portal ID was supplied for the Care U account, so the website keeps a clearly labelled local catalog and a simulated checkout until the backend is connected.
+
+## [1.1] Import products, categories, and prices
+
+Admin path: **Shop → Products**, **Shop → Categories**, **Shop → Settings → Price rules**.
+
+- Export the real Care U product list (names, categories, images, stock, and prices) and import it into the target erxes shop.
+- Create the category tree before importing products so every product lands in the right category.
+- Verify each imported product has a price, image, stock count, and published status.
+- Configure sale prices or promotional pricing in the price rules screen.
+- The local copy used by this website lives in `data/products.json` and `data/categories.json`. It is sample data for review only; it is not a substitute for the erxes import.
+
+## [1.2] Payment setup (QPay)
+
+Admin path: **Settings → Payments → QPay**.
+
+- Add the Care U QPay merchant credentials, callback URL, and enabled bank/card options.
+- Confirm the payment success and failure redirect URLs point at the deployed storefront.
+- The Facebook page currently lists Pocket app as a payment option. Confirm with the account owner whether QPay, Pocket, or both should be enabled before going live.
+- Run a small live test payment and verify the order transitions to paid before enabling it for customers.
+- The checkout page offers QPay as the primary method, but no live payment is processed until this admin setup is done.
+
+## [1.3] eBarimt setup
+
+Admin path: **Settings → eBarimt** (or **Settings → Integrations → eBarimt**).
+
+- Register the Care U company tax ID, terminal, and branch details used for electronic receipts.
+- Map VAT-enabled products and choose whether receipts are issued per order or per item.
+- Test a receipt with a real tax ID and confirm the QR code and PDF/email delivery work.
+- The checkout page shows the eBarimt opt-in; actual receipt generation happens in erxes after this setup.
+
+## [1.4] Configure delivery zones, fees, and order statuses
+
+Admin path: **Shop → Settings → Delivery zones** and **Shop → Settings → Order statuses**.
+
+- Create the Ulaanbaatar delivery zone with a 3,000₮ fee and 1–2 working day estimate, plus a free store pickup option.
+- Set free delivery above 80,000₮ and confirm the fee rules in the erxes shop settings.
+- Add and order the statuses: pending, confirmed, preparing, shipped, delivered, cancelled.
+- These values are mirrored in `data/content.ts` (`deliveryZones`, `freeDeliveryThreshold`, `orderStatuses`) for the standalone storefront.
+
+## [1.5] Place a test order from cart to receipt
+
+Admin path: **Shop → Orders** and **Settings → Payments → QPay** (for the live payment part).
+
+- With a connected erxes shop, add a real product to the cart, complete checkout with QPay, and confirm the order moves from `pending` to `confirmed`.
+- Verify the order appears in **Shop → Orders** with the correct line items, delivery fee, payment transaction, and eBarimt receipt.
+- In this standalone build, the same flow was exercised locally: product → cart → checkout → `/order-confirmed` demo receipt. The demo order is stored in browser local storage only, and no payment or tax receipt is produced.

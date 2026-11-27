@@ -1,0 +1,19 @@
+{
+  "name": "careu-mn",
+  "template_type": "ecommerce",
+  "language": "mn",
+  "languages": ["mn"],
+  "tone": "warm",
+  "sections": ["about", "contact", "faq", "blog", "gallery"],
+  "cms_sections": ["about", "contact", "faq", "blog"],
+  "design_strategy": "from-scratch",
+  "ui_source": "words",
+  "ui_source_ref": "Care U — warm, family-oriented storefront for baby and child care products",
+  "reference_url": "https://www.facebook.com/profile.php?id=100062973054225",
+  "competitor_urls": [],
+  "color_hint": "warm-peach",
+  "delivery_types": ["delivery", "pickup"],
+  "allow_guest": true,
+  "deploy_target": "vercel",
+  "extra_notes": "Standalone Care U storefront. GitHub, Vercel and erxes 3.0 were not linked on the account at task start, so catalog and checkout are local demo data; QPay, eBarimt and shop configuration are documented as erxes admin manual steps."
+}

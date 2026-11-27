@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Ном">
+  <rect width="600" height="800" fill="#FFF1E6"/>
+  <circle cx="300" cy="360" r="210" fill="#FFD166" opacity="0.55"/>
+  <rect x="160" y="230" width="280" height="360" rx="18" fill="#FF6B6B"/>
+  <rect x="180" y="250" width="240" height="320" rx="12" fill="#FFF8F0"/>
+  <path d="M300 250v320" stroke="#FF6B6B" stroke-width="12"/>
+  <circle cx="240" cy="340" r="34" fill="#4ECDC4"/>
+  <circle cx="360" cy="440" r="24" fill="#7C5CFC"/>
+  <text x="300" y="640" text-anchor="middle" font-family="sans-serif" font-size="34" fill="#1E2438">Busy Kids</text>
+</svg>

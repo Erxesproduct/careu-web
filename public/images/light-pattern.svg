@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Decorative pattern">
+  <g opacity="0.24">
+    <circle cx="60" cy="70" r="26" fill="none" stroke="#FF6B6B" stroke-width="4"/>
+    <path d="M60 56v28M46 70h28" stroke="#FF6B6B" stroke-width="4"/>
+    <rect x="190" y="30" width="44" height="58" rx="8" fill="none" stroke="#FFD166" stroke-width="4" transform="rotate(12 212 59)"/>
+    <path d="M200 59h24" stroke="#FFD166" stroke-width="4"/>
+    <path d="M330 90l8 18 19 2-14 14 4 19-17-9-17 9 4-19-14-14 19-2z" fill="#3FC1B5"/>
+    <path d="M40 210c18-26 36-26 54 0s36 26 54 0" fill="none" stroke="#7C5CFC" stroke-width="4"/>
+    <circle cx="270" cy="220" r="14" fill="none" stroke="#FF6B6B" stroke-width="4"/>
+    <rect x="330" y="270" width="40" height="52" rx="7" fill="none" stroke="#3FC1B5" stroke-width="4" transform="rotate(-12 350 296)"/>
+    <path d="M110 330l10 10-10 10-10-10z" fill="#FFD166"/>
+    <circle cx="220" cy="348" r="6" fill="#7C5CFC"/>
+    <path d="M6 130l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z" fill="#FF6B6B"/>
+  </g>
+</svg>
