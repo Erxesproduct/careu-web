@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Хүүхдийн арчилгаа", "parent_id": null, "level": 0 },
+  { "id": 11, "name": "Шүршүүр, угаалга", "parent_id": 1, "level": 1 },
+  { "id": 12, "name": "Арьс, үсний тос", "parent_id": 1, "level": 1 },
+  { "id": 2, "name": "Хувирга, ариун цэвэр", "parent_id": null, "level": 0 },
+  { "id": 21, "name": "Хувирга", "parent_id": 2, "level": 1 },
+  { "id": 22, "name": "Салфетка, хөвөн", "parent_id": 2, "level": 1 },
+  { "id": 3, "name": "Хооллолт", "parent_id": null, "level": 0 },
+  { "id": 31, "name": "Хүүхдийн хоол", "parent_id": 3, "level": 1 },
+  { "id": 32, "name": "Нэмэлт тэжээл", "parent_id": 3, "level": 1 },
+  { "id": 4, "name": "Тоглоом, хөгжүүлэх", "parent_id": null, "level": 0 },
+  { "id": 41, "name": "Мэдрэхүйн тоглоом", "parent_id": 4, "level": 1 },
+  { "id": 42, "name": "Хөгжүүлэх тоглоом", "parent_id": 4, "level": 1 },
+  { "id": 5, "name": "Бэлэг, хувцас", "parent_id": null, "level": 0 },
+  { "id": 51, "name": "Бэлэгний багц", "parent_id": 5, "level": 1 },
+  { "id": 52, "name": "Хүүхдийн хувцас", "parent_id": 5, "level": 1 }
+]
