@@ -30,3 +30,12 @@ Admin path: **Settings → eBarimt** (or **Settings → Integrations → eBarimt
 - Map VAT-enabled products and choose whether receipts are issued per order or per item.
 - Test a receipt with a real tax ID and confirm the QR code and PDF/email delivery work.
 - The checkout page shows the eBarimt opt-in; actual receipt generation happens in erxes after this setup.
+
+## [1.4] Configure delivery zones, fees, and order statuses
+
+Admin path: **Shop → Settings → Delivery zones** and **Shop → Settings → Order statuses**.
+
+- Create the Ulaanbaatar delivery zone with a 3,000₮ fee and 1–2 working day estimate, plus a free store pickup option.
+- Set free delivery above 80,000₮ and confirm the fee rules in the erxes shop settings.
+- Add and order the statuses: pending, confirmed, preparing, shipped, delivered, cancelled.
+- These values are mirrored in `data/content.ts` (`deliveryZones`, `freeDeliveryThreshold`, `orderStatuses`) for the standalone storefront.
