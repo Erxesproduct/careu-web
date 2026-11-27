@@ -21,3 +21,12 @@ Admin path: **Settings → Payments → QPay**.
 - The Facebook page currently lists Pocket app as a payment option. Confirm with the account owner whether QPay, Pocket, or both should be enabled before going live.
 - Run a small live test payment and verify the order transitions to paid before enabling it for customers.
 - The checkout page offers QPay as the primary method, but no live payment is processed until this admin setup is done.
+
+## [1.3] eBarimt setup
+
+Admin path: **Settings → eBarimt** (or **Settings → Integrations → eBarimt**).
+
+- Register the Care U company tax ID, terminal, and branch details used for electronic receipts.
+- Map VAT-enabled products and choose whether receipts are issued per order or per item.
+- Test a receipt with a real tax ID and confirm the QR code and PDF/email delivery work.
+- The checkout page shows the eBarimt opt-in; actual receipt generation happens in erxes after this setup.
