@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Decorative pattern">
+  <g opacity="0.72">
+    <circle cx="54" cy="58" r="34" fill="#FF6B6B" opacity="0.2"/>
+    <circle cx="54" cy="58" r="17" fill="none" stroke="#FF6B6B" stroke-width="4"/>
+    <rect x="180" y="26" width="46" height="60" rx="8" fill="none" stroke="#FFD166" stroke-width="4" transform="rotate(14 203 56)"/>
+    <path d="M183 56h40" stroke="#FFD166" stroke-width="3"/>
+    <path d="M268 92l7 16 17 2-12 12 3 17-15-8-15 8 3-17-12-12 17-2z" fill="#3FC1B5" opacity="0.6"/>
+    <circle cx="112" cy="146" r="9" fill="#7C5CFC"/>
+    <circle cx="140" cy="170" r="4" fill="#FFD166"/>
+    <rect x="244" y="188" width="38" height="48" rx="6" fill="none" stroke="#FF6B6B" stroke-width="4" transform="rotate(-12 263 212)"/>
+    <path d="M30 214c16-22 32-22 48 0s32 22 48 0" fill="none" stroke="#3FC1B5" stroke-width="4" opacity="0.75"/>
+    <circle cx="182" cy="264" r="20" fill="none" stroke="#FFD166" stroke-width="4"/>
+    <path d="M280 268l12 12-12 12-12-12z" fill="#7C5CFC" opacity="0.7"/>
+    <circle cx="88" cy="292" r="5" fill="#FF6B6B"/>
+    <path d="M6 112l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z" fill="#FFD166" opacity="0.6"/>
+  </g>
+</svg>

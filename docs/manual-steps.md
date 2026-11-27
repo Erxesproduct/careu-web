@@ -39,3 +39,11 @@ Admin path: **Shop → Settings → Delivery zones** and **Shop → Settings →
 - Set free delivery above 80,000₮ and confirm the fee rules in the erxes shop settings.
 - Add and order the statuses: pending, confirmed, preparing, shipped, delivered, cancelled.
 - These values are mirrored in `data/content.ts` (`deliveryZones`, `freeDeliveryThreshold`, `orderStatuses`) for the standalone storefront.
+
+## [1.5] Place a test order from cart to receipt
+
+Admin path: **Shop → Orders** and **Settings → Payments → QPay** (for the live payment part).
+
+- With a connected erxes shop, add a real product to the cart, complete checkout with QPay, and confirm the order moves from `pending` to `confirmed`.
+- Verify the order appears in **Shop → Orders** with the correct line items, delivery fee, payment transaction, and eBarimt receipt.
+- In this standalone build, the same flow was exercised locally: product → cart → checkout → `/order-confirmed` demo receipt. The demo order is stored in browser local storage only, and no payment or tax receipt is produced.
