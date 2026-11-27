@@ -11,3 +11,13 @@ Admin path: **Shop → Products**, **Shop → Categories**, **Shop → Settings 
 - Verify each imported product has a price, image, stock count, and published status.
 - Configure sale prices or promotional pricing in the price rules screen.
 - The local copy used by this website lives in `data/products.json` and `data/categories.json`. It is sample data for review only; it is not a substitute for the erxes import.
+
+## [1.2] Payment setup (QPay)
+
+Admin path: **Settings → Payments → QPay**.
+
+- Add the Care U QPay merchant credentials, callback URL, and enabled bank/card options.
+- Confirm the payment success and failure redirect URLs point at the deployed storefront.
+- The Facebook page currently lists Pocket app as a payment option. Confirm with the account owner whether QPay, Pocket, or both should be enabled before going live.
+- Run a small live test payment and verify the order transitions to paid before enabling it for customers.
+- The checkout page offers QPay as the primary method, but no live payment is processed until this admin setup is done.
